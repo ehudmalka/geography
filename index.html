@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חדר בריחה בגיאוגרפיה</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("map.jpg")) {
+                image.src="pirate.png";
+            }
+        }
+        
+    </script>  
+      
+</head>
+<body>
+    <h1 dir="rtl">חדר בריחה בגיאוגרפיה</h1>
+            
+        
+
+        <div class="flex-container">
+        <div>
+            <!-- Create  Mappings -->
+     <img src = "map.jpg" alt = "HTML Map" border="0" usemap = "#tutorials" id="myImage"/>
+     
+     <map name = "tutorials">
+        <area shape="rect" 
+           coords = "83,122,216,194"
+           alt = "Perl Tutorial"
+           target = "_self" 
+           onclick = "changeImage()" 
+           onMouseOut = "showTutorial('')"/>
+        
+        <area shape = "rect" 
+           coords = "429,153,546,236"
+           href = "/html/index.htm" alt = "HTML Tutorial" 
+           target = "_self" 
+           onMouseOver = "showTutorial('html')" 
+           onMouseOut = "showTutorial('')"/>
+         
+         <area shape = "rect" 
+            coords = "258,712,394,795"
+            href = "/php/index.htm" alt = "PHP Tutorial"
+            target = "_self" 
+            onMouseOver = "showTutorial('php')" 
+            onMouseOut = "showTutorial('')"/>
+      </map>
+        </div>
+        
+        <div dir="rtl">
+            <p>
+                 שלום לכם פיראטים צעירים!!!<br>
+                שבע ספינות יצאו לאוקיאנוס לחפש
+                אחר האוצר האבוד$$$ על כל ספינה פיסת מידע
+                שתוכל לעזור לכם להגיע לאוצר. צאו לים הגדול
+                שדדו את הספינות ותמצאו את האוצר.
+                רק שודד מנוסה עם ידע במפות יוכל להגיע לאוצר בקלות<br>
+                                       בהצלחה!!!<br>
+                
+            </p>
+            
+            <img src="pirate1.png" alt="pirate" width="350" height="250px" >
+            
+        </div>  
+        </div>
+        <div class="div1">
+            <img src="pirate.png" alt="pirate" width="150" height="100px" >
+        </div>
+        <div class="div2">
+            <img src="pirate.png" alt="pirate" width="150" height="100px" >
+        </div>
+        
+    
+     
+     
+</body>
+</html>
